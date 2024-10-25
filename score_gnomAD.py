@@ -49,6 +49,7 @@ def predict(model, x, batch_size=128, verbose=True):
 if __name__ == '__main__':
     log_dir = Path(sys.argv[1]) # where model is saved
     fa = Path(sys.argv[2])
+    zarr_dir = Path(sys.argv[3])
     mask = 100
     
     module = Module.load_from_checkpoint(find_latest_ckp(log_dir),
@@ -57,7 +58,7 @@ if __name__ == '__main__':
     infer_sdata = sd.read_flat_fasta(
                 name = 'seq',
                 fasta = fa,
-                out = f'/tscc/nfs/home/hsher/scratch/{name}.zarr',
+                out = zarr_dir/ f'{name}.zarr',
                 batch_size = 512,
                 fixed_length = False,
             overwrite = True)

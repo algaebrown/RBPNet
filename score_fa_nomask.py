@@ -9,7 +9,7 @@ from pathlib import Path
 if __name__ == '__main__':
     log_dir = Path(sys.argv[1]) # where model is saved
     fa = Path(sys.argv[2])
-    mask = 100
+    mask = 0
     outf = sys.argv[3]
     try:
         zarr_outdir = Path(sys.argv[4])
