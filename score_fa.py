@@ -18,7 +18,7 @@ if __name__ == '__main__':
     
     module = Module.load_from_checkpoint(find_latest_ckp(log_dir),
                                     arch = RBPNet(mask = mask),
-                                    zarr_outdir = zarr_outdir) ###
+                                    ) ###
     
-    output = score_fa(fa, module)
+    output = score_fa(fa, module, zarr_outdir = zarr_outdir)
     output.to_csv(outf)

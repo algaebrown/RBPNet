@@ -58,7 +58,7 @@ def seq_trans(x):
         x = x[..., 32:-32]
         return x
 
-def score_fa(fa, module, batch_size = 256, zarr_outdir=''):
+def score_fa(fa, module, batch_size = 256, zarr_outdir='.'):
     name = str(fa).replace('/', '-')
     if Path(f'{zarr_outdir}/{name}.zarr').exists():
         print('using processed data')
