@@ -55,7 +55,7 @@ def predict(model, x, batch_size=128, verbose=True):
 def seq_trans(x):
         x = sp.ohe(x, sp.alphabets.DNA)
         x = x.swapaxes(1, 2)
-        x = x[..., 32:-32]
+        #x = x[..., 32:-32]
         return x
 
 def score_fa(fa, module, batch_size = 256, zarr_outdir='.'):
