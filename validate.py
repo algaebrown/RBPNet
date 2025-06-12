@@ -68,6 +68,8 @@ def predict(model, x, batch_size=128, verbose=True):
         return outs, pis, dlogodds
 
 if __name__ == '__main__':
+    if not torch.cuda.is_available():
+        warnings.warn('CUDA NOT AVAILABLE!!')
     skipper_config = sys.argv[1]
     exp = sys.argv[2]
     data_dir = Path(sys.argv[3]) # with test.zarr
