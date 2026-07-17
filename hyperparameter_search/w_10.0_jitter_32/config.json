@@ -1,0 +1,10 @@
+{
+    "experiment_id": "w_10.0_jitter_32",
+    "max_jitter": 32,
+    "loss_w": 10.0,
+    "batch_size": 128,
+    "output_path": "./hyperparameter_search",
+    "max_epochs": 100,
+    "num_workers": 4,
+    "dataset_id": "RBFOX2_HepG2_ENCSR987FTF"
+}

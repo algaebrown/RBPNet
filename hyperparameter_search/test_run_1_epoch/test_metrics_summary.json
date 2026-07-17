@@ -1,0 +1,19 @@
+{
+    "mean_profile_pearson(total>10)": 0.4963974356651306,
+    "std_profile_pearson(total>10)": 0.28031647205352783,
+    "mean_profile_pearson(total>50)": 0.5384835600852966,
+    "std_profile_pearson(total>50)": 0.2831684350967407,
+    "mean_profile_pearson(total>100)": 0.5051764249801636,
+    "std_profile_pearson(total>100)": 0.3166026175022125,
+    "mean_profile_pearson(total>200)": 0.4378114640712738,
+    "std_profile_pearson(total>200)": 0.33456355333328247,
+    "dlogodds_pearson": 0.10198064893484116,
+    "dlogodds_pearson(total>10)": 0.07950484752655029,
+    "pi_pearson(total>10)": 0.13138605654239655,
+    "dlogodds_pearson(total>50)": 0.0197612252086401,
+    "pi_pearson(total>50)": -0.08477914333343506,
+    "dlogodds_pearson(total>100)": 0.2682650089263916,
+    "pi_pearson(total>100)": 0.5916367173194885,
+    "dlogodds_pearson(total>200)": 0.19434502720832825,
+    "pi_pearson(total>200)": 0.8539913296699524
+}
